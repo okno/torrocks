@@ -14,17 +14,33 @@ The purposals of **torrocks** is to give an overview on Tor, Hidden Services, an
 
 ###### To Do
 
-- [ ] Install script (bash)
+- [i] Install script (bash)
 - [x] Upload torrocks project 
-- [ ] Manage script (bash)
+- [i] Manage script (bash)
 - [ ] Securty script (bash)
 - [x] Write base README.md
 - [ ] Write Complete documentation
+- [ ] Add The Onion Box Web interface integration
 - [ ] Bugfix
+
 
 ### Tor overview
 Tor is free and open-source software for enabling anonymous communication. The name is derived from an acronym for the original software project name "The Onion Router". Tor directs Internet traffic through a free, worldwide, volunteer overlay network consisting of more than seven thousand relays to conceal a user's location and usage from anyone conducting network surveillance or traffic analysis. Using Tor makes it more difficult to trace Internet activity to the user: this includes "visits to Web sites, online posts, instant messages, and other communication forms". Tor's intended use is to protect the personal privacy of its users, as well as their freedom and ability to conduct confidential communication by keeping their Internet activities from being monitored. [(Wikipedia)](https://en.wikipedia.org/wiki/Tor_(anonymity_network))
 
+### Download & Install torrocks
+    
+    # cd /opt
+    # sudo git clone https://github.com/okno/torrocks
+    # ln -s /usr/bin/torrocks /opt/torrocks/torrocks.sh
+    
+Check if torrocks symbolic link is correctly placed : 
+
+    ls -al /usr/bin/torrocks 
+    
+Output : 
+
+    
+    
 ### Install Tor
 
 You can find **Tor** inside the most OS, on Linux Debian 9.9 stretch type : 
@@ -33,7 +49,7 @@ You can find **Tor** inside the most OS, on Linux Debian 9.9 stretch type :
     
 If everything is ok **Tor** daemon should be up and running with default configuration, listening on 127.0.0.1 on port 9050, to check your Tor deamon you can use : 
 
-    # netstat -putan | grep tor
+    # sudo netstat -putan | grep tor
     
 You should see an outout like this : 
 
@@ -41,7 +57,7 @@ You should see an outout like this :
     
 Now check if the tor process is running by the user **debian-tor** : 
 
-    # ps -u debian-tor
+    # sudo ps -u debian-tor
     
 Ouput : 
 
@@ -50,7 +66,7 @@ Ouput :
     
 You can also check the status of the deamon whit the **service** command of systemd(shit)
 
-    # service tor status
+    # sudo service tor status
     
 Output : 
 
