@@ -8,6 +8,17 @@ Run your own TOR exit node & control it with Tor Control Center (TCC)
 
 Templates for a secure Tor exit node configuration
 
+### AIM
+
+The purposals of **torrock** is to give an overview on Tor, Hidden Services, and monitoring with a series of best practices, reviewd documentation, sciprts and tips.
+
+###### To Do
+
+- [ ] Install script (bash)
+- [x] Upload torrocks project 
+- [ ] Manage script (bash)
+- [ ] Securty script (bash)
+
 ### TOR overview
 Tor is free and open-source software for enabling anonymous communication. The name is derived from an acronym for the original software project name "The Onion Router". Tor directs Internet traffic through a free, worldwide, volunteer overlay network consisting of more than seven thousand relays to conceal a user's location and usage from anyone conducting network surveillance or traffic analysis. Using Tor makes it more difficult to trace Internet activity to the user: this includes "visits to Web sites, online posts, instant messages, and other communication forms". Tor's intended use is to protect the personal privacy of its users, as well as their freedom and ability to conduct confidential communication by keeping their Internet activities from being monitored. [(Wikipedia)](https://en.wikipedia.org/wiki/Tor_(anonymity_network))
 
