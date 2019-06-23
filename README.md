@@ -1,4 +1,5 @@
 # torrocks 
+[![GitHub license](https://img.shields.io/github/license/okno/torrocks.svg)](https://github.com/okno/torrocks/blob/master/LICENSE)
 Run your own TOR exit node & control it with Tor Control Center (TCC)
 
 Templates for a secure Tor exit node configuration
@@ -17,6 +18,12 @@ Install arm for Tor
 
     apt update
     apt install tor-arm
+    
+Install tmux 
+
+    apt install tmux 
+    
+
 
 This is how my TCC look like : 
 ![](https://raw.githubusercontent.com/okno/torrocks/master/torrocks.png)
