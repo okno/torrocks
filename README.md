@@ -7,6 +7,9 @@ Run your own TOR exit node & control it with Tor Control Center (TCC)
 
 Templates for a secure Tor exit node configuration
 
+### TOR overview
+Tor is free and open-source software for enabling anonymous communication. The name is derived from an acronym for the original software project name "The Onion Router". Tor directs Internet traffic through a free, worldwide, volunteer overlay network consisting of more than seven thousand relays to conceal a user's location and usage from anyone conducting network surveillance or traffic analysis. Using Tor makes it more difficult to trace Internet activity to the user: this includes "visits to Web sites, online posts, instant messages, and other communication forms". Tor's intended use is to protect the personal privacy of its users, as well as their freedom and ability to conduct confidential communication by keeping their Internet activities from being monitored. 
+
 Files: 
 
 File  | Description
@@ -41,3 +44,16 @@ cond(no)->op
 
 This is how my TCC look like : 
 ![](https://raw.githubusercontent.com/okno/torrocks/master/torrocks.png)
+
+###FlowChart
+
+```flow
+st=>start: Login
+op=>operation: Login operation
+cond=>condition: Successful Yes or No?
+e=>end: To admin
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
