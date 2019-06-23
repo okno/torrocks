@@ -24,7 +24,7 @@ File  | Description
 [tor.conf](https://github.com/okno/torrocks/blob/master/tor.conf) | Nginx template for hidden service
 [notices.log](https://github.com/okno/torrocks/blob/master/notices.log) | Sample log file
 
-### TOR Control Center (TCC)
+## TOR Control Center (TCC)
 
 TCC is a simple method to monitor the health state of yout Tor Exit Node, just open tmux, split in 4 terms, run tailf, netstat, arm and have fun with a beer.
 
