@@ -1,6 +1,11 @@
 
-<p align="center"><a href="https://www.torproject.org/" target="_blank"><img src="https://2019.www.torproject.org/images/tor-logo.png" /></a></p>
+<p align="center">
+<a href="https://www.torproject.org/" target="_blank"><img src="https://2019.www.torproject.org/images/tor-logo.png" /></a><br />
+<img src="https://raw.githubusercontent.com/okno/torrocks/master/torrocks.screenshot.png" />
+</p>
 
+
+torrocks.screenshot.png
 # torrocks 
 [![GitHub license](https://img.shields.io/github/license/okno/torrocks.svg)](https://github.com/okno/torrocks/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/okno/torrocks.svg)](https://github.com/okno/torrocks/issues) [![GitHub stars](https://img.shields.io/github/stars/okno/torrocks.svg)](https://github.com/okno/torrocks/stargazers) [![Twitter](https://img.shields.io/twitter/url/https/github.com/okno/torrocks.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fokno%2Ftorrocks)
 
@@ -14,9 +19,9 @@ The purposals of **torrocks** is to give an overview on Tor, Hidden Services, an
 
 ###### To Do
 
-- [i] Install script (bash)
+- [x] Install script (bash)
 - [x] Upload torrocks project 
-- [i] Manage script (bash)
+- [x] Manage script (bash)
 - [ ] Securty script (bash)
 - [x] Write base README.md
 - [ ] Write Complete documentation
@@ -31,7 +36,8 @@ Tor is free and open-source software for enabling anonymous communication. The n
     
     # cd /opt
     # sudo git clone https://github.com/okno/torrocks
-    # ln -s /usr/bin/torrocks /opt/torrocks/torrocks.sh
+    # sudo chmod +x /opt/torrocks/torrocks.sh
+    # sudo ln -s /opt/torrocks/torrocks.sh /usr/bin/torrocks
     
 Check if torrocks symbolic link is correctly placed : 
 
@@ -39,7 +45,7 @@ Check if torrocks symbolic link is correctly placed :
     
 Output : 
 
-    
+    lrwxrwxrwx 1 root root 25 Jun 23 23:21 /usr/bin/torrocks -> /opt/torrocks/torrocks.sh
     
 ### Install Tor
 
@@ -115,12 +121,12 @@ TCC is a simple method to monitor the health state of yout Tor Exit Node, just o
 
 Install arm for Tor
 
-    # apt update
-    # apt install tor-arm
+    # sudo apt update
+    # sudo apt install tor-arm
     
 Install tmux 
 
-    # apt install tmux 
+    # sudo apt install tmux 
 
 This is how my TCC look like : 
 ![](https://raw.githubusercontent.com/okno/torrocks/master/torrocks.png)
