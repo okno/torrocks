@@ -1,11 +1,7 @@
-
 <p align="center">
 <a href="https://www.torproject.org/" target="_blank"><img src="https://2019.www.torproject.org/images/tor-logo.png" /></a><br />
 <img src="https://raw.githubusercontent.com/okno/torrocks/master/torrocks.screenshot.png" />
 </p>
-
-
-torrocks.screenshot.png
 # torrocks 
 [![GitHub license](https://img.shields.io/github/license/okno/torrocks.svg)](https://github.com/okno/torrocks/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/okno/torrocks.svg)](https://github.com/okno/torrocks/issues) [![GitHub stars](https://img.shields.io/github/stars/okno/torrocks.svg)](https://github.com/okno/torrocks/stargazers) [![Twitter](https://img.shields.io/twitter/url/https/github.com/okno/torrocks.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fokno%2Ftorrocks)
 
@@ -31,6 +27,14 @@ The purposals of **torrocks** is to give an overview on Tor, Hidden Services, an
 
 ### Tor overview
 Tor is free and open-source software for enabling anonymous communication. The name is derived from an acronym for the original software project name "The Onion Router". Tor directs Internet traffic through a free, worldwide, volunteer overlay network consisting of more than seven thousand relays to conceal a user's location and usage from anyone conducting network surveillance or traffic analysis. Using Tor makes it more difficult to trace Internet activity to the user: this includes "visits to Web sites, online posts, instant messages, and other communication forms". Tor's intended use is to protect the personal privacy of its users, as well as their freedom and ability to conduct confidential communication by keeping their Internet activities from being monitored. [(Wikipedia)](https://en.wikipedia.org/wiki/Tor_(anonymity_network))
+
+### Clean old Tor install & purge:
+Remove old installation and configurations files that could create problems during the setup of torrocks.(Not mandatory)
+
+    # sudo apt remove -y --purge tor tor-arm tor-geoipdb  python-geoip python-torctl torsocks
+    # sudo apt autoremove 
+    # sudo rm -rf /var/log/tor
+    # sudo rm -rf -rf /etc/log
 
 ### Download & Install torrocks
     
