@@ -9,12 +9,16 @@ Run your own TOR exit node & control it with Tor Control Center (TCC)
 Templates for a secure Tor exit node configuration
 
 ### TOR overview
-Tor is free and open-source software for enabling anonymous communication. The name is derived from an acronym for the original software project name "The Onion Router". Tor directs Internet traffic through a free, worldwide, volunteer overlay network consisting of more than seven thousand relays to conceal a user's location and usage from anyone conducting network surveillance or traffic analysis. Using Tor makes it more difficult to trace Internet activity to the user: this includes "visits to Web sites, online posts, instant messages, and other communication forms". Tor's intended use is to protect the personal privacy of its users, as well as their freedom and ability to conduct confidential communication by keeping their Internet activities from being monitored. [wikipedia](https://en.wikipedia.org/wiki/Tor_(anonymity_network))
+Tor is free and open-source software for enabling anonymous communication. The name is derived from an acronym for the original software project name "The Onion Router". Tor directs Internet traffic through a free, worldwide, volunteer overlay network consisting of more than seven thousand relays to conceal a user's location and usage from anyone conducting network surveillance or traffic analysis. Using Tor makes it more difficult to trace Internet activity to the user: this includes "visits to Web sites, online posts, instant messages, and other communication forms". Tor's intended use is to protect the personal privacy of its users, as well as their freedom and ability to conduct confidential communication by keeping their Internet activities from being monitored. [(Wikipedia)](https://en.wikipedia.org/wiki/Tor_(anonymity_network))
 
-### Files: 
+### Paths, Logs, Files: 
 
 File  | Description
 ------------- | -------------
+[/var/log/tor/] | Default log Tor directory
+[/usr/share/doc/tor] | Sample config&template files for tor and hidden services
+[/var/log/tor/notices.log] | Tor health log (best for Tor service analysis)
+[/var/log/tor/debug.log] | Tor debug log (best for debugging & network analysis)
 [torrc](https://github.com/okno/torrocks/blob/master/torrc)  | **Main configuration file**
 [tor-exit-notice.html](https://github.com/okno/torrocks/blob/master/tor-exit-notice.html) | Html template for Tor data port
 [tor.conf](https://github.com/okno/torrocks/blob/master/tor.conf) | Nginx template for hidden service
