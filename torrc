@@ -1,0 +1,22 @@
+SOCKSPort 9050 # blind 9050 to 127.0.0.1
+
+Log notice file /var/log/tor/notices.log
+Log debug file /var/log/tor/debug.log
+
+DataDirectory /var/lib/tor/data
+ControlPort 9051
+HashedControlPassword 16:872860BXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXAD684053EC4C
+CookieAuthentication 1
+
+HiddenServiceDir /var/lib/tor/leaks/
+HiddenServicePort 80 127.0.0.1:31337
+
+ORPort 9001
+Address tor.userkernel.space
+Nickname userkernel
+
+DirPort 9030 # Policy & DMCA 
+DirPortFrontPage /etc/tor/tor-exit-notice.html
+
+DisableDebuggerAttachment 0
+HiddenServiceStatistics 0
