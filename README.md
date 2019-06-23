@@ -66,7 +66,7 @@ Output :
 
 Ok, now we are sure that the `tor` daemon is running with PID `13302`, with user `debian-tor`, listening on `127.0.0.1` on port `9050`
 
-   ****Always be sure tor is running with non root user
+ :warning: Never run Tor with root user :warning:
 
 ### Paths, Logs, Files: 
 File  | Description
