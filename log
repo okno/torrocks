@@ -1,0 +1,28 @@
+Jun 23 13:43:50.695 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jun 23 13:43:50.695 [notice] Read configuration file "/usr/share/tor/tor-service-defaults-torrc".
+Jun 23 13:43:50.695 [notice] Read configuration file "/etc/tor/torrc".
+Jun 23 13:43:50.699 [notice] Opening Socks listener on 127.0.0.1:9050
+Jun 23 13:43:50.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Jun 23 13:43:50.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Jun 23 13:43:51.000 [notice] Bootstrapped 0%: Starting
+Jun 23 13:43:51.000 [notice] Signaled readiness to systemd
+Jun 23 13:43:52.000 [notice] Opening Socks listener on /var/run/tor/socks
+Jun 23 13:43:52.000 [notice] Opening Control listener on /var/run/tor/control
+Jun 23 13:43:52.000 [notice] Bootstrapped 5%: Connecting to directory server
+Jun 23 13:43:52.000 [notice] Bootstrapped 10%: Finishing handshake with directory server
+Jun 23 13:43:52.000 [notice] Bootstrapped 15%: Establishing an encrypted directory connection
+Jun 23 13:43:52.000 [notice] Bootstrapped 20%: Asking for networkstatus consensus
+Jun 23 13:43:52.000 [notice] Bootstrapped 25%: Loading networkstatus consensus
+Jun 23 13:43:52.000 [notice] Bootstrapped 45%: Asking for relay descriptors
+Jun 23 13:43:52.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 25/6444, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of exit bw = 0% of path bw.)
+Jun 23 13:43:52.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 25/6444, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of exit bw = 0% of path bw.)
+Jun 23 13:43:52.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 25/6444, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of exit bw = 0% of path bw.)
+Jun 23 13:43:52.000 [notice] Bootstrapped 50%: Loading relay descriptors
+Jun 23 13:43:53.000 [notice] Bootstrapped 55%: Loading relay descriptors
+Jun 23 13:43:54.000 [notice] Bootstrapped 63%: Loading relay descriptors
+Jun 23 13:43:54.000 [notice] Bootstrapped 68%: Loading relay descriptors
+Jun 23 13:43:54.000 [notice] Bootstrapped 74%: Loading relay descriptors
+Jun 23 13:43:54.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Jun 23 13:43:55.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
+Jun 23 13:43:55.000 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+Jun 23 13:43:55.000 [notice] Bootstrapped 100%: Done
