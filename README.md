@@ -27,7 +27,44 @@ Tor is free and open-source software for enabling anonymous communication. The n
 
 ### Install Tor
 
-You can fine tor inside the most repos, on Linux Debian 9.9 
+You can find **Tor** inside the most OS, on Linux Debian 9.9 stretch type : 
+
+    sudo apt install tor & service tor start
+    
+If everything is ok **Tor** daemon should be up and running with default configuration, listening on 127.0.0.1 on port 9050, to check your Tor deamon you can use : 
+
+    netstat -putan | grep tor
+    
+You should see an outout like this : 
+
+    tcp        0      0 127.0.0.1:9050          0.0.0.0:*               LISTEN      13302/tor
+    
+Now check if the tor process is running by the user **debian-tor** : 
+
+    ps -u debian-tor
+    
+Ouput : 
+
+    PID TTY          TIME CMD
+    13302 ?        00:00:01 tor
+    
+You can also check the status of the deamon whit the **service** command of systemd(shit)
+
+    service tor status
+    
+Output : 
+
+    ● tor.service - Anonymizing overlay network for TCP (multi-instance-master)
+    Loaded: loaded (/lib/systemd/system/tor.service; enabled; vendor preset: enabled)
+    Active: active (exited) since Sun 2019-06-23 15:39:58 BST; 22min ago
+    Process: 13295 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+    Main PID: 13295 (code=exited, status=0/SUCCESS)
+    Tasks: 0 (limit: 4915)
+    CGroup: /system.slice/tor.service
+    Jun 23 15:39:58 HOSTNAME systemd[1]: Starting Anonymizing overlay network for TCP (multi-instance-master)...
+    Jun 23 15:39:58 HOSTNAME systemd[1]: Started Anonymizing overlay network for TCP (multi-instance-master).
+
+Ok, now we are sure that the *tor* daemon is running with PID *13302*, with user *debian-tor*, listening on *127.0.0.1* on port *9050*
 
 ### Paths, Logs, Files: 
 File  | Description
