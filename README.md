@@ -64,7 +64,9 @@ Output :
     Jun 23 15:39:58 HOSTNAME systemd[1]: Starting Anonymizing overlay network for TCP (multi-instance-master)...
     Jun 23 15:39:58 HOSTNAME systemd[1]: Started Anonymizing overlay network for TCP (multi-instance-master).
 
-Ok, now we are sure that the *tor* daemon is running with PID *13302*, with user *debian-tor*, listening on *127.0.0.1* on port *9050*
+Ok, now we are sure that the `tor` daemon is running with PID `13302`, with user `debian-tor`, listening on `127.0.0.1` on port `9050`
+
+   ****Always be sure tor is running with non root user
 
 ### Paths, Logs, Files: 
 File  | Description
