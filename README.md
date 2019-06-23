@@ -10,7 +10,7 @@ Templates for a secure Tor exit node configuration
 
 ### AIM
 
-The purposals of **torrocks** is to give an overview on Tor, Hidden Services, and monitoring with a series of best practices, reviewd documentation, sciprts and tips.
+The purposals of **torrocks** is to give an overview on Tor, Hidden Services, and monitoring with a series of best practices, reviewd documentation, scripts and tips.
 
 ###### To Do
 
@@ -29,11 +29,11 @@ Tor is free and open-source software for enabling anonymous communication. The n
 
 You can find **Tor** inside the most OS, on Linux Debian 9.9 stretch type : 
 
-    sudo apt install tor & service tor start
+    # sudo apt install tor & service tor start
     
 If everything is ok **Tor** daemon should be up and running with default configuration, listening on 127.0.0.1 on port 9050, to check your Tor deamon you can use : 
 
-    netstat -putan | grep tor
+    # netstat -putan | grep tor
     
 You should see an outout like this : 
 
@@ -41,7 +41,7 @@ You should see an outout like this :
     
 Now check if the tor process is running by the user **debian-tor** : 
 
-    ps -u debian-tor
+    # ps -u debian-tor
     
 Ouput : 
 
@@ -50,7 +50,7 @@ Ouput :
     
 You can also check the status of the deamon whit the **service** command of systemd(shit)
 
-    service tor status
+    # service tor status
     
 Output : 
 
@@ -97,12 +97,12 @@ TCC is a simple method to monitor the health state of yout Tor Exit Node, just o
 
 Install arm for Tor
 
-    apt update
-    apt install tor-arm
+    # apt update
+    # apt install tor-arm
     
 Install tmux 
 
-    apt install tmux 
+    # apt install tmux 
 
 This is how my TCC look like : 
 ![](https://raw.githubusercontent.com/okno/torrocks/master/torrocks.png)
