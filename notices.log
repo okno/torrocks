@@ -1,0 +1,39 @@
+Jun 23 03:59:30.000 [notice] Tor 0.2.9.16 (git-9ef571339967c1e5) opening log file.
+Jun 23 03:59:30.273 [notice] Tor 0.2.9.16 (git-9ef571339967c1e5) running on Linux with Libevent 2.0.21-stable, OpenSSL 1.1.0j and Zlib 1.2.8.
+Jun 23 03:59:30.273 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jun 23 03:59:30.273 [notice] Read configuration file "/etc/tor/torrc".
+Jun 23 03:59:30.277 [notice] Your ContactInfo config option is not set. Please consider setting it, so we can contactyou if your server is misconfigured or something else goes wrong.
+Jun 23 03:59:30.278 [notice] Based on detected system memory, MaxMemInQueues is set to 5981 MB. You can override thisby setting MaxMemInQueues by hand.
+Jun 23 03:59:30.278 [warn] Tor is running as an exit relay with the default exit policy. If you did not want this behavior, please set the ExitRelay option to 0. If you do want to run an exit Relay, please set the ExitRelay option to 1to disable this warning, and for forward compatibility.
+Jun 23 03:59:30.278 [warn] In a future version of Tor, ExitRelay 0 may become the default when no ExitPolicy is given.
+Jun 23 03:59:30.278 [notice] Opening Socks listener on 127.0.0.1:9050
+Jun 23 03:59:30.278 [notice] Opening Control listener on 127.0.0.1:9051
+Jun 23 03:59:30.278 [notice] Opening OR listener on 0.0.0.0:9001
+Jun 23 03:59:30.278 [notice] Opening Directory listener on 0.0.0.0:9030
+Jun 23 03:59:30.000 [warn] Your log may contain sensitive information - you're logging more than "notice". Don't log unless it serves an important reason. Overwrite the log afterwards.
+Jun 23 03:59:30.000 [notice] Not disabling debugger attaching for unprivileged users.
+Jun 23 03:59:30.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Jun 23 03:59:30.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Jun 23 03:59:30.000 [notice] Configured to measure statistics. Look for the *-stats files that will first be written to the data directory in 24 hours from now.
+Jun 23 03:59:30.000 [notice] Your Tor server's identity key fingerprint is 'userkernel 95086E11E279DB405E8BCD92A1782E959A5793F1'
+Jun 23 03:59:30.000 [notice] Bootstrapped 0%: Starting
+Jun 23 03:59:34.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Jun 23 03:59:35.000 [notice] Bootstrapped 85%: Finishing handshake with first hop
+Jun 23 03:59:35.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
+Jun 23 03:59:36.000 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+Jun 23 03:59:36.000 [notice] Bootstrapped 100%: Done
+Jun 23 03:59:36.000 [notice] Now checking whether ORPort 149.202.32.9:9001 and DirPort 149.202.32.9:9030 are reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+Jun 23 03:59:36.000 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent.
+Jun 23 03:59:37.000 [notice] Self-testing indicates your DirPort is reachable from the outside. Excellent. Publishingserver descriptor.
+Jun 23 03:59:38.000 [notice] Performing bandwidth self-test...done.
+Jun 23 04:08:19.000 [notice] New control connection opened from 127.0.0.1.
+Jun 23 04:09:01.000 [notice] New control connection opened from 127.0.0.1.
+Jun 23 04:10:29.000 [notice] New control connection opened from 127.0.0.1.
+Jun 23 04:14:48.000 [notice] New control connection opened from 127.0.0.1.
+Jun 23 04:15:08.000 [notice] New control connection opened from 127.0.0.1.
+Jun 23 04:19:40.000 [notice] New control connection opened from 127.0.0.1.
+Jun 23 04:22:52.000 [notice] New control connection opened from 127.0.0.1.
+Jun 23 09:59:34.000 [notice] Heartbeat: Tor's uptime is 5:59 hours, with 20 circuits open. I've sent 435.08 MB and received 443.43 MB.
+Jun 23 09:59:34.000 [notice] Circuit handshake stats since last time: 0/0 TAP, 2246/2246 NTor.
+Jun 23 09:59:34.000 [notice] Since startup, we have initiated 0 v1 connections, 0 v2 connections, 0 v3 connections, and 9 v4 connections; and received 0 v1 connections, 0 v2 connections, 18 v3 connections, and 2121 v4 connections.
+Jun 23 09:59:34.000 [notice] DoS mitigation since startup: 0 circuits rejected, 0 marked addresses. 0 connections closed. 0 single hop clients refused.
