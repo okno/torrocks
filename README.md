@@ -33,6 +33,8 @@ Tor is free and open-source software for enabling anonymous communication. The n
 ### Clean old Tor install & purge:
 Remove old installation and configurations files that could create problems during the setup of torrocks.(Not mandatory)
 
+    # sudo service tor stop
+    # sudo killall -9 tor
     # sudo apt remove -y --purge tor tor-arm tor-geoipdb  python-geoip python-torctl torsocks
     # sudo apt autoremove 
     # sudo rm -rf /var/log/tor
@@ -55,9 +57,11 @@ Output :
     
 ### Install Tor
 
-You can find **Tor** inside the most OS, on Linux Debian 9.9 stretch type : 
+You can find **Tor** inside the most OS,be sure to install the latest version, on Linux Debian 9.9 stretch  just type : 
 
-    # sudo apt install tor & service tor start
+    # sudo apt update 
+    # sudo apt install tor
+    # sudo service tor start
     
 If everything is ok **Tor** daemon should be up and running with default configuration, listening on 127.0.0.1 on port 9050, to check your Tor deamon you can use : 
 
@@ -114,7 +118,7 @@ File  | Description
 [tor.conf](https://github.com/okno/torrocks/blob/master/tor.conf) | Nginx template for hidden service
 [notices.log](https://github.com/okno/torrocks/blob/master/notices.log) | Sample log file
 
-## TOR Control Center (TCC)
+## Tor Control Center (TCC)
 
 TCC is a simple method to monitor the health state of yout Tor Exit Node, just open tmux, split in 4 terms, run tailf, netstat, arm and have fun with a beer.
 
@@ -134,5 +138,5 @@ Install tmux
 
     # sudo apt install tmux 
 
-This is how my TCC look like : 
+This is how my Tor Control Center looks like : 
 ![](https://raw.githubusercontent.com/okno/torrocks/master/torrocks.png)
