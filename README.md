@@ -29,8 +29,8 @@ Install tmux
 ### arm workflow
 
 ```flow
-st=>start arm
-op=>end hashed password
+st=>start: arm
+op=>operation: send hashed password
 cond=>condition: ACK?
 e=>end: Access Tor Control
 
