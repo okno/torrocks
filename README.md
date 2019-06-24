@@ -67,7 +67,7 @@ If everything is ok **Tor** daemon should be up and running with default configu
 
     # sudo netstat -putan | grep tor
     
-You should see an outout like this : 
+You should see an output like this : 
 
     tcp        0      0 127.0.0.1:9050          0.0.0.0:*               LISTEN      13302/tor
     
@@ -75,7 +75,7 @@ Now check if the tor process is running by the user **debian-tor** :
 
     # sudo ps -u debian-tor
     
-Ouput : 
+Output : 
 
     PID TTY          TIME CMD
     13302 ?        00:00:01 tor
@@ -124,10 +124,10 @@ TCC is a simple method to monitor the health state of yout Tor Exit Node, just o
 
 #### Requirements 
 
+* tor
 * tmux 
 * arm 
 * netstat 
-* tailf 
 
 Install arm for Tor
 
