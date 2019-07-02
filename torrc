@@ -7,8 +7,12 @@ DataDirectory /var/lib/tor/data
 ControlPort 9051
 HashedControlPassword 16:872860BXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXAD684053EC4C
 CookieAuthentication 1
+DisableDebuggerAttachment 0
+HiddenServiceStatistics 0
 
-HiddenServiceDir /var/lib/tor/leaks/
+HiddenServiceDir /var/lib/tor/hidden_service/ssh
+HiddenServicePort 22 127.0.0.1:22
+HiddenServiceDir /var/lib/tor/hidden_service/userkernel
 HiddenServicePort 80 127.0.0.1:31337
 
 ORPort 9001
@@ -93,6 +97,3 @@ ExitPolicy accept *:19638     # Ensim control panel
 ExitPolicy accept *:50002     # Electrum Bitcoin SSL
 ExitPolicy accept *:64738     # Mumble
 ExitPolicy reject *:*         # Default stateless torrocks
-
-DisableDebuggerAttachment 0
-HiddenServiceStatistics 0
