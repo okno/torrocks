@@ -1,7 +1,5 @@
 <p align="center">
-<a href="https://www.torproject.org/" target="_blank"><img src="https://2019.www.torproject.org/images/tor-logo.png" /></a><br />
-<img src="https://raw.githubusercontent.com/okno/torrocks/master/torrocks.screenshot.png" />
-</p>
+<a href="https://www.torproject.org/" target="_blank"><img src="https://2019.www.torproject.org/images/tor-logo.png" /></a><br /><img src="https://raw.githubusercontent.com/okno/torrocks/master/torrocks.screenshot.png" /></p>
 
 # torrocks 
 
@@ -35,10 +33,11 @@ Remove old installation and configurations files that could create problems duri
 
     # sudo service tor stop
     # sudo killall -9 tor
-    # sudo apt remove -y --purge tor tor-arm tor-geoipdb  python-geoip python-torctl torsocks
+    # sudo apt remove -y --purge tor tor-arm tor-geoipdb python-geoip python-torctl torsocks
     # sudo apt autoremove 
     # sudo rm -rf /var/log/tor
-    # sudo rm -rf -rf /etc/tor
+    # sudo rm -rf /etc/tor
+    # sudo rm -rf /var/lib/tor #(Backup your old private key before removing /var/lib/tor/hidden_service
 
 ### Download & Install torrocks
     
@@ -98,7 +97,21 @@ Output :
 
 Ok, now we are sure that the `tor` daemon is running with PID `13302`, with user `debian-tor`, listening on `127.0.0.1` on port `9050`
 
- :warning: Never run Tor with root user :warning:
+:warning: Never run Tor with root user :warning:
+
+### Configure HTTP&SSH Hidden Services + Enable TOR Exit node
+
+This is the most important section to understand, here you can find a detailed configuration of two hidden services and enbling a TOR Exit node.
+
+:warning: NOT all ISP allow hosting TOR Exit nodes, check your provider policy :warning:
+
+Now check 
+
+    # XXXXXXX
+
+####################################################################
+                          TO BE CONTINUED 
+####################################################################
 
 ### Paths, Logs, Files: 
 File  | Description
@@ -140,3 +153,8 @@ Install tmux
 
 This is how my Tor Control Center looks like : 
 ![](https://raw.githubusercontent.com/okno/torrocks/master/torrocks.png)
+
+#### References 
+
+- [Tor Project](https://www.torproject.org/)
+
