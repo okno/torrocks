@@ -158,3 +158,14 @@ This is how my Tor Control Center looks like :
 
 - [Tor Project](https://www.torproject.org/)
 
+#### Contribution
+
+You can contribute in following ways:
+
+   - Report bugs
+   - Give suggestions to make it better
+   - Fix issues & submit a pull request
+
+Do you want to have a conversation in private? 
+Hit me up on my [twitter](https://twitter.com/pawelzorzan), or write in XMPP+OTR to okno[at]jabber.ccc.de
+
