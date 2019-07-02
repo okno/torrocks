@@ -38,7 +38,7 @@ Remove old installation and configurations files that could create problems duri
     # sudo apt remove -y --purge tor tor-arm tor-geoipdb  python-geoip python-torctl torsocks
     # sudo apt autoremove 
     # sudo rm -rf /var/log/tor
-    # sudo rm -rf -rf /etc/log
+    # sudo rm -rf -rf /etc/tor
 
 ### Download & Install torrocks
     
@@ -60,7 +60,7 @@ Output :
 You can find **Tor** inside the most OS,be sure to install the latest version, on Linux Debian 9.9 stretch  just type : 
 
     # sudo apt update 
-    # sudo apt install tor
+    # sudo apt install tor -y 
     # sudo service tor start
     
 If everything is ok **Tor** daemon should be up and running with default configuration, listening on 127.0.0.1 on port 9050, to check your Tor deamon you can use : 
